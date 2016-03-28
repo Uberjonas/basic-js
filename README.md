@@ -1,0 +1,1 @@
+This is my JavaScript repository. Learning the JS by pounding my head against the desk until something useful comes out.
