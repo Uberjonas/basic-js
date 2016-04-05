@@ -8,6 +8,9 @@ var isSunk=false;
 
 while(isSunk==false){
 	guess=prompt("Enter a number between 1 and 6.");
+	if(guess==null){
+		alert("This only works if you enter something, dumbass.")
+	}
 	if(guess<0||guess>6){
 		alert("Enter a valid cell number, freakshow.");
 	}else{
@@ -24,5 +27,5 @@ while(isSunk==false){
 		}
 	}
 }
-var stats = "You took "+guesses+" guesses to sink the battleship, "+"which means your shooting accuracy was "+(3/guesses);
+var stats = "You took "+guesses+" guesses to sink the battleship, "+"which means your shooting accuracy was %"+((3/guesses)*100);
 alert(stats);
