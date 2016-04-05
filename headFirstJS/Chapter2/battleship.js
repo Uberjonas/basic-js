@@ -10,20 +10,21 @@ while(isSunk==false){
 	guess=prompt("Enter a number between 1 and 6.");
 	if(guess==null){
 		alert("This only works if you enter something, dumbass.")
-	}
-	if(guess<0||guess>6){
-		alert("Enter a valid cell number, freakshow.");
 	}else{
-		guesses=guesses+1;
-		if(guess==location1||guess==location2||guess==location3){
-			alert("HIT!");
-			hits=hits+1;
-			if(hits==3){
-				isSunk=true;
-				alert("You sank my battleship!");
-			}
+		if(guess<0||guess>6){
+			alert("Enter a valid cell number, freakshow.");
 		}else{
-			alert("MISS!");
+			guesses=guesses+1;
+			if(guess==location1||guess==location2||guess==location3){
+				alert("HIT!");
+				hits=hits+1;
+				if(hits==3){
+					isSunk=true;
+					alert("You sank my battleship!");
+				}
+			}else{
+				alert("MISS!");
+			}
 		}
 	}
 }
