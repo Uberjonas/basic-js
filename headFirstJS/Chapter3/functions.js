@@ -3,11 +3,15 @@ function fuckFace(x,y){
 	var homo = x/y+42;
 	var freakShow = 21;
 	if(x < y){
-		document.write(tool);
+		console.log(tool);
+		function assPound(){
+			var flop = "fuck ward";
+			document.write(flop);
+		}
 	}else if(x > y){
-		document.write(homo);
+		console.log(homo);
 	}else{
-		document.write(freakShow*2);
+		console.log(freakShow*2);
 	}
 }
 fuckFace(2,5);
