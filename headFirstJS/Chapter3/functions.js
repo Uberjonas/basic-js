@@ -8,6 +8,7 @@ function fuckFace(x,y){
 			var flop = "fuck ward";
 			console.log(flop);
 		}
+		assPound();
 	}else if(x > y){
 		console.log(homo);
 	}else{
