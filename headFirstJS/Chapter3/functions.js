@@ -18,7 +18,7 @@ function game(){
         	if(cockAdd==correct){              
             	var answer5 = prompt("Holy shit...good guess. That's one in each hand, the penetrators, and the one between his feet.");
             }else{
-          	  	alert("Nerp, your game ends here. You were close though.");
+          	  	alert("Nerp, your game ends here. You were close though.You should try again.");
             }
         }
 	}else if(answer1=="no"){
