@@ -20,8 +20,30 @@ function game(){
                     for(var i=0;i<cockAdd;i++){
                         cockSucker.push(Math.ceil(Math.random()*12));
                     }
-                    var answer6 = prompt("The sizes of the cocks you chose for ward are: "+cockSucker+". Should we use this info to create some statistics?(yes/no)");
-                console.log(cockSucker);
+                    var answer6 = prompt("The sizes of the cocks you chose for ward are, in inches: "+cockSucker+". Should we use this info to create some statistics?(yes/no)");
+                    console.log(cockSucker);
+                    if(answer6 == "yes"){
+                        var totalInches = 0;
+                        var biggestCock = 0;
+                        var smallestCock = 14;
+                        var avgLength = totalInches/cockSucker.length;
+                        for(var i=0;i<cockSucker.length;i++){
+                            if (cockSucker[i]>0){
+                                totalInches = totalInches+cockSucker;                        
+                            }
+                            if (cockSucker[i]>biggestCock){
+                                biggestCock = cockSucker[i];
+                            }
+                            if (cockSucker[i]>0&&cockSucker[i]<smallestCock) {
+                                smallestCock = cockSucker[i];
+                            }
+                        }
+                        alert("The biggest cock he sucked was "+biggestCock+" inches. The smallest was "+smallestCock+" inches. The average size of the cocks was "+avgLength+" inches. Ward sucked "+cockSucker.length+" cocks today. You're welcome. Game over.")    
+                    }else{
+                        alert("Seriously? You suck the ballsack. AND it's a sweaty one.");
+                    }
+                        }
+                        }
                 }else{
                     alert("Fine, dick, but this was gonna get pretty great.");
                 }
