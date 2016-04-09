@@ -26,10 +26,11 @@ function game(){
                         var totalInches = 0;
                         var biggestCock = 0;
                         var smallestCock = 14;
-                        var avgLength = totalInches/cockSucker.length;
+                        var avgLength = 0;
                         for(var i=0;i<cockSucker.length;i++){
                             if (cockSucker[i]>0){
-                                totalInches = totalInches+cockSucker;                        
+                                totalInches = totalInches+cockSucker;
+                                avgLength = totalInches/cockSucker.length;                        
                             }
                             if (cockSucker[i]>biggestCock){
                                 biggestCock = cockSucker[i];
@@ -38,12 +39,10 @@ function game(){
                                 smallestCock = cockSucker[i];
                             }
                         }
-                        alert("The biggest cock he sucked was "+biggestCock+" inches. The smallest was "+smallestCock+" inches. The average size of the cocks was "+avgLength+" inches. Ward sucked "+cockSucker.length+" cocks today. You're welcome. Game over.")    
+                        alert("The biggest cock he sucked was "+biggestCock+" inches. The smallest was "+smallestCock+" inches. The average size of the cocks was "+avgLength.toFixed(2)+" inches. Ward sucked "+cockSucker.length+" cocks today. You're welcome. Game over.")    
                     }else{
                         alert("Seriously? You suck the ballsack. AND it's a sweaty one.");
                     }
-                        }
-                        }
                 }else{
                     alert("Fine, dick, but this was gonna get pretty great.");
                 }
