@@ -29,7 +29,7 @@ function game(){
                         var avgLength = 0;
                         for(var i=0;i<cockSucker.length;i++){
                             if (cockSucker[i]>0){
-                                totalInches = totalInches+cockSucker;
+                                totalInches = totalInches+cockSucker[i];
                                 avgLength = totalInches/cockSucker.length;                        
                             }
                             if (cockSucker[i]>biggestCock){
