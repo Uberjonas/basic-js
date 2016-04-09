@@ -20,6 +20,7 @@ function game(){
                     for(var i=0;i<cockAdd;i++){
                         cockSucker.push(Math.ceil(Math.random()*12));
                     }
+                    var answer6 = prompt("The sizes of the cocks you chose for ward are: "+cockSucker+". Should we use this info to create some statistics?(yes/no)");
                 console.log(cockSucker);
                 }else{
                     alert("Fine, dick, but this was gonna get pretty great.");
