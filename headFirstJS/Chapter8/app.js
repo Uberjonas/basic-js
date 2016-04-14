@@ -3,10 +3,12 @@ var view = {
 		var messageArea = document.getElementById("messageArea");
 		messageArea.innerHTML = msg;
 	},
-	displayHit: function(){
-
+	displayHit: function(location){
+		var cell = document.getElementById(location);
+		cell.setAttribute("class", "hit");
 	},
-	displayMiss: function(){
-
+	displayMiss: function(location){
+		var cell = document.getElementById(location);
+		cell.setAttribute("class", "miss");
 	}
 };
