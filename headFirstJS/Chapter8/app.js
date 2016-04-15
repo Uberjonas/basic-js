@@ -47,7 +47,7 @@ var model = {
 			}
 		}
 		return true;
-	}
+	},
 	generateShipLocations: function(){
 		var locations;
 		for (var i=0; i<this.numShips; i++){
