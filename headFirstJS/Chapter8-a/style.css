@@ -4,10 +4,10 @@ body {
 
 div#board {
 	position: relative;
-	width: 900px;
-	height: 900px;
+	width: 1000px;
+	height: 1000px;
 	margin: auto;
-	background-color: #b4d310;
+	background: url("TTT.png") no-repeat;
 }
 
 div#messageArea {
