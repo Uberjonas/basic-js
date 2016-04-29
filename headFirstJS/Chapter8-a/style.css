@@ -1,0 +1,47 @@
+body {
+	background-color: black;
+}
+
+div#board {
+	position: relative;
+	width: 900px;
+	height: 900px;
+	margin: auto;
+	background-color: #b4d310;
+}
+
+div#messageArea {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #009fff;
+}
+
+table {
+	position: absolute;
+	left: 173px;
+	top: 98px;
+	border-spacing: 0px;
+}
+td{
+	width: 94px;
+	height: 94px;
+}
+form{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	padding: 15px;
+	background-color: #009fff;
+}
+form input{
+	background-color: rgb(152,207,113);
+	border-color: #009fff;
+	font-size: 1em;
+}
+.x{
+	background: url("icon_x.png") no-repeat center center;
+}
+.o{
+	background: url("o.png") no-repeat center center;
+}
